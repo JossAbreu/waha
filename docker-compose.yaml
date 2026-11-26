@@ -1,8 +1,8 @@
-# https://waha.devlike.pro/docs/how-to/install/
 services:
   waha:
     restart: always
     image: devlikeapro/waha:latest
+    shm_size: '1gb'
     env_file:
       - .env
     volumes:
